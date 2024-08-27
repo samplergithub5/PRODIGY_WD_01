@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  color: rgb(230, 217, 217);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(230, 218, 218);
+  font-size: 18px;
+  padding: 15px 0;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+.content {
+  padding-top: 80px; /* To make space for the fixed nav */
+}
+
+section {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar.scrolled {
+  background-color: #555;
+}
+/* Section Styling */
+#about {
+  background-color: #f4f4f4;
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+#about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#about ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#about ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+#about ul li strong {
+  color: #000;
+}
+
+/* Additional Styling */
+#about ul li:before {
+  content: "•";
+  color: #8163c6;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#about p:last-child {
+  font-style: italic;
+    color: #d4ceda;
+}
+/* Section Styling */
+#contact {
+  background-color: #bcb5c4;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #050202;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #0d0404;
+}
+
+.contact-info,
+.contact-form {
+  margin-bottom: 30px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #080303;
+}
+
+.contact-info a {
+  color: #090303f1;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #0d0505;
+  border-radius: 5px;
+}
